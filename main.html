@@ -5,9 +5,31 @@
 <head>
       <link rel="stylesheet" href="styles.css">
 </head>
+ <title>Shopping Cart 2</title>
 
 <body>
 	<!-- the entire body must be written by student -->
+	 <input type="text" id="item-name-input" placeholder="Item Name">
+  <input type="number" id="item-price-input" placeholder="Item Price">
+  <button onclick="addItem()">Add</button>
+
+	 <table border="1">
+    <thead>
+      <tr>
+        <th>Item Name</th>
+        <th>Item Price</th>
+      </tr>
+    </thead>
+    <tbody id="item-list">
+    </tbody>
+    <tfoot>
+      <tr>
+        <td><strong>Total</strong></td>
+        <td data-ns-test="grandTotal">0</td>
+      </tr>
+    </tfoot>
+  </table>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
