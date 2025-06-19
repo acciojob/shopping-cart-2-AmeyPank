@@ -23,7 +23,7 @@ function addItem() {
 
       const grandTotalEl = document.querySelector('[data-ns-test="grandTotal"]');
       const currentTotal = parseFloat(grandTotalEl.innerText);
-      grandTotalEl.innerText = (currentTotal + price).toFixed(2);
+      grandTotalEl.innerText = (currentTotal + price).toString();
 
       nameInput.value = '';
       priceInput.value = '';
